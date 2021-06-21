@@ -26,6 +26,7 @@ def removePreexistingData():
         for file in files:
             if file.endswith(".json") and os.path.exists(os.path.join(root, file)):
                 os.remove(os.path.join(root, file))
+                print(f"DEBUG: Removed file {os.path.join(root, file)}")
 
 
 def getLanguageDirs() -> list[str]:
@@ -37,13 +38,16 @@ def getLanguageDirs() -> list[str]:
 
 
 def writeJsonData(directory: str):
-    filePath = os.path.join(DATA_JSON_DIR, f"{directory}_supportDocs_dataSource")
-    with open(filePath, "w") as dataSourceFile:
+    dataSourceFilePath = os.path.join(DATA_JSON_DIR, f"{directory}_supportDocs_dataSource")
+    with open(dataSourceFilePath, "w") as dataSourceFile:
         for filePath in getAllFiles(directory):
             singleJsonData = parseMarkdown(filePath)
+            print(f"DEBUG: Parse file {filePath}")
             dataSourceFile.write(json.dumps(singleJsonData, indent=4))
             dataSourceFile.write(",\n")
         dataSourceFile.write(json.dumps(getSingleJsonData("404 Page", ["SupportDocs Integrated File"], f"{directory}/404"), indent=4))
+        print(f"DEBUG: Parse file {directory}/404")
+    print(f"DEBUG: Write to file {dataSourceFilePath}")
 
 
 def getAllFiles(directory: str) -> list[str]:
@@ -86,7 +90,12 @@ def main():
     # Create _data folder
     if not os.path.exists(DATA_JSON_DIR):
         os.makedirs(DATA_JSON_DIR)
+        print(f"DEBUG: Make dir {DATA_JSON_DIR}")
 
     # Write json file
     for languageDir in getLanguageDirs():
         writeJsonData(languageDir)
+
+
+if __name__ == "__main__":
+    main()
