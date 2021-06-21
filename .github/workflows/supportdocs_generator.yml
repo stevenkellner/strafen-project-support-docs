@@ -28,7 +28,7 @@ jobs:
                   if [ -z "$(git status --porcelain)" ]; then
                     echo "::set-output name=push::false"
                   else
-                    git commit -m "Add generated data source and README" -a
+                    git commit -m "Add generated data source" -a
                     echo "::set-output name=push::true"
                   fi
               shell: bash
@@ -37,4 +37,4 @@ jobs:
               uses: ad-m/github-push-action@master
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  branch: DataSource
+                  branch: main
