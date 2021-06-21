@@ -2,7 +2,7 @@ name: "SupportDocs Generator"
 on:
     push:
         branches:
-            - DataSource
+            - main
 jobs:
     generate:
         runs-on: ubuntu-latest
