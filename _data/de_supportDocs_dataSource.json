@@ -1,0 +1,112 @@
+[{
+    "title": "Allgemeines",
+    "tags": [
+        "general"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/General"
+},
+{
+    "title": "Anmelden / Registrieren",
+    "tags": [
+        "logInSignIn"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/LogIn-SignIn"
+},
+{
+    "title": "Strafe Hinzuf\u00fcgen",
+    "tags": [
+        "fineAdd"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/FineActions/AddFine"
+},
+{
+    "title": "Strafe \u00c4ndern",
+    "tags": [
+        "fineUpdate"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/FineActions/UpdateFine"
+},
+{
+    "title": "Strafe L\u00f6schen",
+    "tags": [
+        "fineDelete"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/FineActions/DeleteFine"
+},
+{
+    "title": "Vorlage \u00c4ndern",
+    "tags": [
+        "reasonUpdate"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/ReasonActions/UpdateReason"
+},
+{
+    "title": "Vorlage Hinzuf\u00fcgen",
+    "tags": [
+        "reasonAdd"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/ReasonActions/AddReason"
+},
+{
+    "title": "Vorlage L\u00f6schen",
+    "tags": [
+        "reasonDelete"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/ReasonActions/DeleteReason"
+},
+{
+    "title": "Abmelden Anderer Erzwingen",
+    "tags": [
+        "settingsForceSignOut"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/Settings/ForceSignOutSettings"
+},
+{
+    "title": "Strafen Teilen",
+    "tags": [
+        "settingsShareFines"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/Settings/ShareFinesSettings"
+},
+{
+    "title": "Verzugszinsen",
+    "tags": [
+        "settingsLatePaymentInterest"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/Settings/LatePaymentInterestSettings"
+},
+{
+    "title": "Allgemeine Einstellungen",
+    "tags": [
+        "settingsGeneral"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/Settings/GeneralSettings"
+},
+{
+    "title": "Person Hinzuf\u00fcgen",
+    "tags": [
+        "personAdd"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/PersonActions/AddPerson"
+},
+{
+    "title": "Person L\u00f6schen",
+    "tags": [
+        "personDelete"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/PersonActions/DeletePerson"
+},
+{
+    "title": "Person \u00c4ndern",
+    "tags": [
+        "personUpdate"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/PersonActions/UpdatePerson"
+},
+{
+    "title": "404 Page",
+    "tags": [
+        "SupportDocs Integrated File"
+    ],
+    "url": "https://stevenkellner.github.io/StrafenSupportDocs/de/404"
+}]
