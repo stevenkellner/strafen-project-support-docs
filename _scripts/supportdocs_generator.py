@@ -38,7 +38,7 @@ def getLanguageDirs() -> list[str]:
 
 
 def writeJsonData(directory: str):
-    dataSourceFilePath = os.path.join(DATA_JSON_DIR, f"{directory}_supportDocs_dataSource")
+    dataSourceFilePath = os.path.join(DATA_JSON_DIR, f"{directory}_supportDocs_dataSource.json")
     with open(dataSourceFilePath, "w") as dataSourceFile:
         for filePath in getAllFiles(directory):
             singleJsonData = parseMarkdown(filePath)
