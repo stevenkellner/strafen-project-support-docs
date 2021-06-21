@@ -40,6 +40,7 @@ def getLanguageDirs() -> list[str]:
 def writeJsonData(directory: str):
     dataSourceFilePath = os.path.join(DATA_JSON_DIR, f"{directory}_supportDocs_dataSource.json")
     with open(dataSourceFilePath, "w") as dataSourceFile:
+        dataSourceFile.write("[")
         for filePath in getAllFiles(directory):
             singleJsonData = parseMarkdown(filePath)
             print(f"DEBUG: Parse file {filePath}")
@@ -47,6 +48,7 @@ def writeJsonData(directory: str):
             dataSourceFile.write(",\n")
         dataSourceFile.write(json.dumps(getSingleJsonData("404 Page", ["SupportDocs Integrated File"], f"{directory}/404"), indent=4))
         print(f"DEBUG: Parse file {directory}/404")
+        dataSourceFile.write("]")
     print(f"DEBUG: Write to file {dataSourceFilePath}")
 
 
